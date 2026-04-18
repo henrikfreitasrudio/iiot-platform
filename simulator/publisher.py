@@ -12,5 +12,5 @@ while True:
         "timestamp": time.time()
     }
     client.publish("sensors/data", json.dumps(data))
-    print(data)
+    print("Sent: ", data, flush=True)
     time.sleep(2)

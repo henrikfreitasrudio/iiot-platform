@@ -15,3 +15,8 @@ services:
     build: ./simulator
     depends_on:
       - mosquitto
+
+  worker:
+    build: ./worker
+    depends_on:
+      - mosquitto
