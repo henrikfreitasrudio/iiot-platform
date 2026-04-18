@@ -10,3 +10,8 @@ services:
     image: eclipse-mosquitto
     ports:
       - "1883:1883"
+
+  simulator:
+    build: ./simulator
+    depends_on:
+      - mosquitto
