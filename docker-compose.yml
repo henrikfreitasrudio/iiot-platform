@@ -1,0 +1,12 @@
+services:
+  influxdb:
+    image: influxdb:2.7
+    ports:
+      - "8086:8086"
+    env_file:
+      - .env
+
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
